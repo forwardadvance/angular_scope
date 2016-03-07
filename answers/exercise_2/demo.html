@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Scope</title>
+    <script src="angular.js"></script>
+    <script src="demo.js"></script>
+    <style>
+
+    </style>
+  </head>
+  <body ng-app="app"  ng-controller="appController">
+
+    <form ng-controller="profileFormController">
+      <fieldset>
+        <label for="username">Username</label>
+        <input id="username" ng-model="user.username" />
+      </fieldset>
+      <fieldset>
+        <label for="hasKryptonite">Has Kryptonite?</label>
+        <input id="hasKryptonite" type="checkbox" ng-model="user.hasKryptonite" />
+      </fieldset>
+    </form>
+
+    <div ng-controller="profileController">
+      <p>Username: {{user.username}}</p>
+      <p>Has Kryptonite: {{user.hasKryptonite}}</p>
+    </div>
+
+  </body>
+</html>
