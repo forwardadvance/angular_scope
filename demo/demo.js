@@ -1,21 +1,9 @@
 // * Scope uses prototypical inheritance
 // * Some directives create a new scope
 // * ng-controller creates a new scope
-// * Share with a page controller
+// * Create a page controller to share the cheese
 
 angular.module('app', [])
-
-
-angular.module('app')
-  .controller("appController", function($scope) {
-    $scope.cheese = {};
-  })
-
-
-
-
-
-angular.module('app')
   .controller("cheeseController", function() {
 
   });

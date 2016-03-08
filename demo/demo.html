@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -9,22 +8,20 @@
       div {border:1px solid grey; padding:1em; margin:1em;}
     </style>
   </head>
-  <body ng-app="app" ng-controller="appController">
+  <body ng-app="app">
 
     <div ng-controller="cheeseController">
-      <input ng-model="cheese.name" />
-      {{cheese.name}}
-
-      <div ng-controller="cheeseController">
-        <input ng-model="cheese.name" />
-        {{cheese.name}}
-      </div>
-
+      <input ng-model="cheeseName" />
+      {{cheeseName}}
     </div>
-
 
   </body>
 </html>
+
+
+
+
+
 
 
 
