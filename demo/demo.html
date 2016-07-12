@@ -10,10 +10,19 @@
   </head>
   <body ng-app="app">
 
-    <div ng-controller="cheeseController">
-      <input ng-model="cheeseName" />
-      {{cheeseName}}
+    <div ng-controller="cheeseController as outerController">
+      <input ng-model="outerController.cheeseName" />
+      {{outerController.cheeseName}}
+
+      <div ng-controller="cheeseController as innerController">
+        <input ng-model="innerController.cheeseName" />
+        {{innerController.cheeseName}} - {{outerController.cheeseName}}
+        <input ng-model="innerController.cheeseDesc" />
+        {{innerController.cheeseDesc}}
+      </div>
+
     </div>
+
 
   </body>
 </html>

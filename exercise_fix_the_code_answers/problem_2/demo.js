@@ -7,6 +7,6 @@ angular.module('app', [])
   })
   .controller("profileController", function($scope) {
   })
-  .controller("appController", function($rootScope) {
-    $rootScope.user = {};
+  .controller("appController", function($scope) {
+    $scope.user = {};
   });

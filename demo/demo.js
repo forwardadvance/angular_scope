@@ -3,10 +3,13 @@
 // * ng-controller creates a new scope
 // * Create a page controller to share the cheese
 
+
+
 angular.module('app', [])
   .controller("cheeseController", function() {
+    this.cheeseName = "toast";
+  })
 
-  });
 
 
 
